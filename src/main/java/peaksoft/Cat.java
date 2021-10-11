@@ -61,7 +61,7 @@ public class Cat implements Animal{
 
     @Override
     public String toString() {
-        return "Dog " +
+        return "Cat " +
                 "breed:'" + breed + '\'' +
                 ", color:'" + color + '\'' +
                 ", weight:" + weight +

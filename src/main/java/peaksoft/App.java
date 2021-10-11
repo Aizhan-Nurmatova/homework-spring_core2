@@ -8,12 +8,12 @@ public class App
     {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        Animal animal = context.getBean("myAnimal",Animal.class);
-        System.out.println(animal);
-
-
         Person person = context.getBean("myPerson",Person.class);
         System.out.println(person);
         person.getAnimal().animalMinus();
+
+
+        Animal animal = context.getBean("myAnimal",Animal.class);
+//        System.out.println(animal);
     }
 }
